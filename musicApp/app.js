@@ -7,7 +7,7 @@ const play = document.querySelector("#controls #play");
 const next = document.querySelector("#controls #next");
 const duration = document.querySelector("#duration ");
 const currentTime = document.querySelector("#current-time ");
-const progressBar=document.querySelector("#progress-bar")
+const progressBar = document.querySelector("#progress-bar")
 
 
 
@@ -73,7 +73,7 @@ function playMusic() {
 function calculatetime(toplamSaniye) {
     const dakika = Math.floor(toplamSaniye / 60);
     const saniye = Math.floor(toplamSaniye % 60);
-    const guncelSaniye = saniye < 10 ? `0${saniye}`:`${saniye}`;
+    const guncelSaniye = saniye < 10 ? `0${saniye}` : `${saniye}`;
     const sonuc = `${dakika}:${guncelSaniye}`;
     return sonuc;
 }
@@ -81,17 +81,17 @@ function calculatetime(toplamSaniye) {
 
 audio.addEventListener("loadedmetadata", () => {
     duration.textContent = calculatetime(audio.duration);
-    progressBar.max=Math.floor(audio.duration);
+    progressBar.max = Math.floor(audio.duration);
 });
 
-audio.addEventListener("timeupdate",()=>{
-    progressBar.value=Math.floor(audio.currentTime);
-    currentTime.textContent=calculatetime(progressBar.value)
+audio.addEventListener("timeupdate", () => {
+    progressBar.value = Math.floor(audio.currentTime);
+    currentTime.textContent = calculatetime(progressBar.value)
 });
 
 
-progressBar.addEventListener("input",()=>{
-    currentTime.textContent=calculatetime(progressBar.value);
-    audio.currentTime=progressBar.value;
-    
+progressBar.addEventListener("input", () => {
+    currentTime.textContent = calculatetime(progressBar.value);
+    audio.currentTime = progressBar.value;
+
 })

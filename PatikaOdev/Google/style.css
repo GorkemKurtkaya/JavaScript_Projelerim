@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ayarı */
+    text-align: center; /* Metni ortala */
+    background-color: #f9f9f9; /* Arka plan rengi */
+    margin: 0; /* Varsayılan kenar boşluklarını sıfırla */
+}
+
+.container {
+    margin-top: 100px; /* Üst boşluk */
+}
+
+.logo {
+    width: 272px; /* Logo genişliği */
+    height: auto; /* Logo yüksekliği otomatik */
+}
+
+h1 {
+    font-size: 48px; /* Başlık boyutu */
+    margin: 20px 0; /* Başlık üst ve alt boşlukları */
+}
+
+.search-form {
+    display: flex; /* Flexbox kullanarak öğeleri yatayda hizala */
+    justify-content: center; /* Ortada hizala */
+}
+
+.search-input {
+    width: 400px; /* Arama kutusu genişliği */
+    height: 40px; /* Arama kutusu yüksekliği */
+    font-size: 16px; /* Yazı boyutu */
+    padding: 0 10px; /* İç boşluklar */
+    border: 1px solid #ccc; /* Kenar rengi */
+    border-radius: 20px; /* Kenar yuvarlama */
+}
+
+.search-button {
+    height: 40px; /* Buton yüksekliği */
+    font-size: 16px; /* Buton yazı boyutu */
+    margin-left: 10px; /* Butonlar arasındaki boşluk */
+    padding: 0 20px; /* İç boşluk */
+    border: none; /* Kenar sıfırlama */
+    border-radius: 20px; /* Kenar yuvarlama */
+    background-color: #4CAF50; /* Buton rengi */
+    color: white; /* Yazı rengi */
+    cursor: pointer; /* İmleci değiştir */
+}
+
+.search-button:hover {
+    background-color: #45a049; /* Hover durumunda buton rengi */
+}
+
+.links {
+    margin-top: 20px; /* Bağlantılar üst boşluk */
+}
+
+.links a {
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    color: #0066cc; /* Bağlantı rengi */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Hover durumunda alt çizgi ekle */
+}

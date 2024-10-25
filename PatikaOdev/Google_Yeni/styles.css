@@ -1,0 +1,102 @@
+/* Genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* Navbar ayarları */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px;
+    background-color: #fff;
+}
+
+.navbar a {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+/* Ana içerik */
+.container {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Ekranın ortasına konumlamak için */
+}
+
+.logo img {
+    width: 270px;
+}
+
+.search-bar input {
+    width: 600px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #f1f3f4;
+}
+
+/* Footer ayarları */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+footer a {
+    color: #5f6368;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
